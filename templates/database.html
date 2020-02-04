@@ -4,6 +4,25 @@
     <title>Table with Database</title>
 </head>
 <body>
-<h3>{{output}}</h3>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Major ID</th>
+    </tr>
+    {% for r in output %}
+    <tr>
+        <td>{{ r.studentID }}</td>
+        <td>{{ r.firstName }}</td>
+        <td>{{ r.lastName }}</td>
+        <td>{{ r.address }}</td>
+        <td>{{ r.phoneNuber }}</td>
+        <td>{{ r.majorID }}</td>
+    </tr>
+    {% endfor %}
+</table>
 </body>
 </html>
